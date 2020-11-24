@@ -1,0 +1,3 @@
+ - `firstboot.conf`の`ACTIVATION_KEY`, `DEVICE_NAME`, `ID_NUMBER`, `DEFAULT_PASSWORD`を設定
+ - `wpa_supplicant.conf`の`ssid`,`psk`にWi-FiのSSIDとパスワードを入力
+ - OSの書き込み終了後のbootフォルダに全てのファイルを追加
