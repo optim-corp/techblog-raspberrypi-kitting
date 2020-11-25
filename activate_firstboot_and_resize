@@ -1,0 +1,11 @@
+# Mounting
+   mount / -o remount,rw
+
+# Activate firstboot
+   sed -i "18 a [ -f /boot/firstboot.sh ] && /bin/bash /boot/firstboot.sh &" /etc/rc.local
+
+# Prevent running this script again
+   sed -i 's| init=.*||' /boot/cmdline.txt
+
+# Resize root partition
+   /usr/lib/raspi-config/init_resize.sh
